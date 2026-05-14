@@ -1,0 +1,16 @@
+/* HOJA DE ESTILOS PARA FORMATOS ESPECIFICO */
+
+ /*  */
+
+ .u_imgResponsive {
+    width: 100%;
+    height: auto; /*Evitar que se deforme  */
+}
+
+ .u_imgObjectFitCover {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; /*Siempre lleno para que se expanda sin deformarse */
+}
+/*# sourceMappingURL=utilidades.css.map */

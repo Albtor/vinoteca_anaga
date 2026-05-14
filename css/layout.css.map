@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout.css"],"names":[],"mappings":"AAAA;IACI,0BAA4B;IAC5B,iBAAiB;IACjB,oBAAoB;IACpB,iBAAiB;IACjB,kBAAkB;;AAEtB","file":"layout.css","sourcesContent":[".container {\r\n    width: calc( 100% - 0.5rem );\r\n    max-width: 1200px;\r\n    /* margin: 0 auto; */\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n   \r\n}"]}

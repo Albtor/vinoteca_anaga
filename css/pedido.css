@@ -1,0 +1,154 @@
+
+main.pedido{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    background: url(../img/madera.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.form-pedido {
+    background: rgba(255, 255, 255, .85);
+    padding: 25px 40px;
+    width: 30%;
+    min-height: 70vh;
+    border-radius: 5px;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    /* margin-left: 10%; */
+}
+
+
+.form-pedido:hover  {
+    background: rgba(255, 255, 255, .96);
+
+}
+
+
+.form-pedido h3, h2 {
+    text-align: center;
+}
+
+
+.form-login{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+
+/* .form-pedido-datosguardados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+
+
+.pedido.form-pedido p {
+    margin-top: 15px;
+}
+
+
+.form-element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+
+.btn-submit {
+    border: none;
+    background: #333;
+    color: white;
+    padding: 12.8px 19.2px;
+    padding: .8rem 1.2rem;
+    border-radius: 15px;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out
+}
+
+
+.btn-submit:hover {
+    background: rgb(43, 112, 168);
+}
+
+
+td .img-pedido{
+    width: 30px;
+    height: 55px;
+}
+
+
+table * {
+    text-align: left;
+}
+
+
+.form-pedido.total-pedido {
+    text-align: right;
+}
+
+
+.pedido .modificardatos {
+    margin-top: 32px;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+    background: rgb(28, 129, 104);
+    padding: 6.4px 32px;
+    padding: .4rem 2rem;
+    border-radius: 10px;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    width: 100%;
+}
+
+
+div .modificardatos:hover {
+    background: rgb(19, 150, 117);
+}
+
+
+.btn-modificar {
+    margin-top: 48px;
+    margin-top: 3rem;
+}
+
+
+.listado .total-pedido {
+    text-align: right;
+}
+
+
+table {
+    margin-top: 12.8px;
+    margin-top: .8rem;
+}
+/*# sourceMappingURL=pedido.css.map */

@@ -1,0 +1,21 @@
+
+.footer {
+    position: relative;
+    height: 35vh;
+    background: transparent url(../img/footer.jpg) no-repeat center center / cover;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.footer img {
+    
+}
+/*# sourceMappingURL=footer.css.map */

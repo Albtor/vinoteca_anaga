@@ -1,0 +1,56 @@
+.backend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+}
+
+main.backend{
+    position: relative;
+    width: 100%;
+    background: url(../img/cellar.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.backend-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.backend a {
+    display: block;
+    text-decoration: none;
+    padding: 6.4px 16px;
+    padding: 0.4rem 1rem;
+    margin: 20px;
+    color: black;
+    background: var(--blanco);
+    -webkit-transition: background .4s ease-in;
+    transition: background .4s ease-in;
+}
+
+.backend a:hover {
+    background: rgb(182, 177, 114);
+    
+}
+
+
+
+/*# sourceMappingURL=backend.css.map */

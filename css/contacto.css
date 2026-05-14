@@ -1,0 +1,76 @@
+
+section.contacto{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/corchos.jpg);
+    background-size: cover;
+}
+
+.contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;;
+    
+}
+
+.contact-form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 50vh;
+}
+
+.form-element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 8px;
+    margin-bottom: .5rem;
+}
+
+.contacto .form-container {
+    background: rgba(255, 255, 255, .8);
+    color: black;
+    padding: 11.2px 16px;
+    padding: 0.7rem 1rem;
+    width: 50%;
+    min-height: 40vh;
+    border-radius: 5px;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;;
+}
+
+.contacto input, textarea:active {
+    outline: rgb(27, 166, 201);
+}
+
+textarea {
+    resize: none;
+}
+
+.contacto p {
+    margin-top: 10px;
+}
+
+
+
+
+/*# sourceMappingURL=contacto.css.map */

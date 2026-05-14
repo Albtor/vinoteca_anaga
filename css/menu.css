@@ -1,0 +1,188 @@
+.btn_menu,
+.btnCarrito {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    -webkit-transition: background-color .4s ease-in-out;
+    transition: background-color .4s ease-in-out;
+}
+
+.btn_menu:hover,
+.btnCarrito:hover {
+    background-color: var(--blanco);
+    cursor: pointer;
+}
+
+.btn_menu {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    width: 5em;
+    height: 5em;
+    font-size: 10px
+     /* para separar el boton, no se usa padding. Rem con el atributo de tamaño fuente del html, es menos variable*/
+ }
+
+.btn_menu:focus {
+    outline: dotted 1px #eee;
+}
+
+.btn_menu span,/* solo hay un span en este html */
+.btn_menu::before,
+.btn_menu::after {
+    display: block;  /* para construir forma rectangular */
+    background: #333;  /* #000 lineas negras */
+    width: 60%;
+    height: .4em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 100px; /* poner bordes a la linea del menu */
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; /* all se afecta a todos -elemento, tiempo, tipo*/
+}
+
+.btn_menu span {
+    text-indent: -5000px; /* necesita display block, no funciona con inline solo. Es para sacar el texto fuera */
+}
+
+.btn_menu::before,
+.btn_menu::after {
+    position: absolute; /* necesita que el padre sea relativo */
+    left: 0;
+    content: ''; /* necesaria para poder existir este */
+}
+
+.btn_menu::before { 
+    top: 1.4em;    
+}
+
+.btn_menu::after { 
+    bottom: 1.4em;
+}
+
+/* ANIMACION MENU hacer X Cuando cambie el estado del boton */
+
+body.mm-ocd-opened .btn_menu span{
+    opacity: 0; 
+}
+
+body.mm-ocd-opened .btn_menu::before{
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); 
+    -webkit-transition-delay: 0.02s; 
+            transition-delay: 0.02s; 
+    top: 2.3em;
+
+}
+
+body.mm-ocd-opened .btn_menu::after{
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); 
+    -webkit-transition-delay: 0.02s; 
+            transition-delay: 0.02s;
+    bottom: 2.3em;
+}
+
+/* CARRITO COMPRA */
+
+.carrito {
+    display: block;
+    background: #fff;
+    position: fixed;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    padding: 19.2px 24px;
+    padding: 1.2rem 1.5rem;
+    font-size: 16px;
+    font-size: 1rem;
+    width: 80%;
+    height: calc(100vh - 70px);
+    max-width: 450px;
+    z-index: 999;
+
+    -webkit-transition: all .3s ease;
+
+    transition: all .3s ease;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0)
+}
+
+.carrito.js_verCarrito {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.carrito h1 {
+    margin-top: 10px;
+    color: rgb(37, 108, 129);
+}
+
+.btnCompra {
+    padding: 16px;
+    padding: 1rem;
+    background-color: rgb(61, 176, 211);
+    border: none;
+    text-align: center;
+    border-radius: 15px;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+
+.btnCompra:hover {
+    background-color: rgb(37, 108, 129);
+    cursor: pointer;
+}
+
+.buttonCompra {
+    text-decoration: none;
+    color: white;
+}
+
+.busqueda form{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;;
+}
+
+/* .busqueda form input {
+    height: 40px;
+} */
+
+.busqueda .btn-search {
+    border: none;
+    background-color: rgb(92, 91, 91);
+    padding: 5px 8px;
+    border-radius: 10px;
+    color: white;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;;
+    
+}
+
+.busqueda .btn-search:hover{
+    background-color: rgb(63, 147, 202); 
+    color: white;
+    cursor: pointer;
+    
+  
+}
+
+.busqueda .search-field {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 11.2px;
+    margin-right: .7rem;
+    padding: 2px;;
+
+}
+/*# sourceMappingURL=menu.css.map */

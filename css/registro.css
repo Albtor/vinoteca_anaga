@@ -1,0 +1,25 @@
+.registro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100vh;
+    padding: 0 5vh;
+}
+
+main.registro{
+    position: relative;
+    width: 100%;
+    background: url(../img/vineyard6.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/*# sourceMappingURL=registro.css.map */

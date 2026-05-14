@@ -1,0 +1,104 @@
+
+.formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100vh;
+    padding: 64px 5vh;
+    padding: 4rem 5vh;;
+}
+
+main.login{
+    position: relative;
+    width: 100%;
+    background: url(../img/vinoviñedo.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, .9);
+    padding: 11.2px 16px;
+    padding: 0.7rem 1rem;
+    width: 400px;
+    min-height: 40vh;
+    border-radius: 5px;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;;
+}
+
+.form-container:hover  {
+    background: rgba(255, 255, 255, .92);
+}
+
+.form-container h3, h2 {
+    margin: 8px 0;
+    margin: .5rem 0;
+}
+
+.form input {
+    width: 100%;
+}
+
+h5 {
+    margin-top: 3.2px;
+    margin-top: 0.2rem;
+    margin-bottom: 9.6px;
+    margin-bottom: 0.6rem;
+    color: orange;
+}
+
+.forgot-pass-text {
+    margin-top: 9.6px;
+    margin-top: 0.6rem;
+    margin-bottom: 3.2px;
+    margin-bottom: 0.2rem;
+    font-size: 12.8px;
+    font-size: 0.8rem;
+}
+
+.reestablecer-link {
+    text-decoration: none;
+    color: white;
+    background: rgb(151, 97, 46);
+    padding: 3.2px 11.2px;
+    padding: .2rem .7rem;
+    border-radius: 10px;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    width: 100%;
+    text-align: center;;
+    
+}
+
+.reestablecer-link:hover {
+    background: rgb(197, 128, 63);
+}
+
+.crearcuenta {
+    text-decoration: none;
+    color: white;
+    background: rgb(28, 129, 104);
+    padding: 8px 16px;
+    padding: .5rem 1rem;
+    border-radius: 2px;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.crearcuenta:hover {
+    background: rgb(40, 180, 145);
+}
+
+
+/*# sourceMappingURL=login.css.map */
